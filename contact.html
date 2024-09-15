@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Restaurant</title>
+</head>
+<body>
+    <header>
+        <h1>Restaurant KEA</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact">
+            <address>
+                <p>
+                    <span>Guldbergsgade 29N</span>
+                    <span>2200 Copenhagen</span>
+                </p>
+            </address>
+            <p>Phone no. <a href="tel:20825370" title="Phone number">20 82 53 70</a></p>
+            <p>E-mail: <a href="mailto:info@restaurantkea.dk" title="Email address">info@restaurantkea.dk</a></p>
+            <img src="img/map.jpg" alt="">
+        </section>
+        <form action="mailto:info@restaurantkea.dk" method="POST">
+            <fieldset>
+                <legend>Contact form</legend>
+                <div>
+                    <label for="txtFullName">Full name</label>
+                    <input type="text" id="txtFullName" name="full_name" required pattern="([A-Za-z-]+ )+[A-Za-z-]+">
+                </div>
+                <div>
+                    <label for="txtPhoneNo">Phone no.</label>
+                    <input type="tel" id="txtPhoneNo" name="phoneNo">
+                </div>
+                <div>
+                    <label for="txtEmail">Email</label>
+                    <input type="email" id="txtEmail" name="email">
+                </div>
+                <div>
+                    <label for="txtAmount">Persons</label>
+                    <input type="number" id="txtAmount" name="amount">
+                </div>
+                <div>
+                    <label for="txtDateTime">Date and time</label>
+                    <input type="datetime-local" id="txtDateTime" name="date">
+                </div>
+                <div>
+                    <label for="txtInformation">Further information</label>
+                    <textarea name="information" id="txtInformation"></textarea>
+                </div>
+                <input type="submit" id="submitBtn">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>
+            &copy; 2024 KEA Development
+        </p>
+    </footer>
+</body>
+</html>
